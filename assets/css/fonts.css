@@ -117,6 +117,14 @@ body {
 .font-degular-var {
   font-family: "DegularVariable", serif;
 }
+
+.font-Erbaum{
+  font-family: "Erbaum",serif;
+}
+
+.font-Degular{
+  font-family: "DegularTextBold",serif;
+}
 /* 
 .swiper-button-next:after {
   content: "→" !important;

@@ -1,11 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Testimonials</title>
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="bg-[#000000] text-white">
+
+    <!-- Section 01 of page -->
+    <div class="max-w-[1440PX] w-full mx-auto px-4 md:px-[80px] py-16">
+        <!-- 
+      - 1 column on small screens, 2 columns on medium+
+      - items-center for vertical alignment
+      - justify-between for horizontal distribution
+      - md:gap-x-24 to add horizontal gap on medium screens and larger 
+    -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 items-center justify-between md:gap-x-[5rem]">
+
+            <!-- LEFT SIDE: Title, Description, Rating, Button -->
+            <div class="md:pl-8">
+                <h2 class="text-3xl md:text-[40px] font-[400] font-Erbaum mb-4 leading-[48px]">
+                    Mūsų klientų atsiliepimai
+                </h2>
+                <p class="text-[#ffffff] text-[18px] mb-6 font-[400] leading-[26px] font-degular-var">
+                    Lorem ipsum dolor sit amet consectetur. Nec ac egestas sed amet gravida volutpat.
+                    Pleasant tempor cursus ut feugiat at sit risus ut velit vel. Ridiculus nulla faucibus
+                    ac ut mauris vel ac. Sollicitudin sapien molestie augue commodo. Amet scelerisque nunc
+                    libero enim eu. Etiam tincidunt facilisi turpis ac dignissim faucibus interdum.
+                </p>
+
+                <!-- Rating + Info -->
+                <div class="flex items-start mb-6 flex-col">
+                    <!-- Stars -->
+                    <div class="flex text-yellow-400 text-[24px] gap-2 pb-3">
+                        <span><img src="/assets/images/Vector (4).png" alt=""></span> 
+                        <span><img src="/assets/images/Vector (4).png" alt=""></span> 
+                        <span><img src="/assets/images/Vector (4).png" alt=""></span> 
+                        <span><img src="/assets/images/Vector (4).png" alt=""></span> 
+                        <span><img src="/assets/images/Vector (4).png" alt=""></span> 
+                    </div>
+                    <span class="text-sm text-[#fffffff] font-[700] font-Degular">
+                        Klientų įvertinimas 4.8/5 <br>120+ atsiliepimų
+                    </span>
+                </div>
+
+                <!-- Button -->
+                <button class="bg-yellow-400 text-gray-900 font-semibold px-12 py-4 rounded-xl 
+                 hover:bg-yellow-300 transition-colors text-[18px] font-Degular font-[700] w-full sm:w-auto">
+                    Palikite atsiliepimą
+                </button>
+            </div>
+
+            <!-- RIGHT SIDE: Relative container + Background Image + Overlapping Card -->
+            <!-- w-full on small screens, fixed width on md+ to prevent overflow -->
+            <div class="relative w-full md:w-[560px] h-[620px] bg-cover bg-center bg-no-repeat 
+               rounded-lg shadow-lg mt-8 md:mt-0 md:ml-10" style="background-image: url('/assets/images/photo-tm.png');">
+                <!-- Overlapping Testimonial Card (bottom-right) -->
+                <div class="absolute md:bottom-16 bottom-0 md:left-6 bg-white text-gray-900 px-4 py-2
+                 rounded-xl shadow-lg w-full md:w-[90%] mb-4 mr-4" style="transform: translateY(20%);">
+                    <!-- Testimonial Text -->
+                    <p class="text-sm text-gray-700 leading-relaxed font-degular-var ">
+                        “Lorem ipsum dolor sit amet consectetur. Duis accumsan convallis viverra eu a
+                        dignissim ut. Etiam ultrices id lacus vitae. Nunc at augue cursus aliquamcper enim.
+                        Vivamus et nunc mauris...”
+                    </p>
+
+                    <!-- User Info -->
+                    <div class="flex items-center pt-2">
+                        <img src="/assets/images/Frame1214136332.png" alt="User Avatar"
+                            class="w-12 h-12 rounded-full object-cover mr-3" />
+                        <div>
+                            <p class="font-semibold font-[700] text-[14px] font-Degular">Olivia Gardens</p>
+                            <p class="text-sm text-gray-500 text-[12px] font-[400] font-degular-var">
+                                forum patarėjas
+                            </p>
+                            <div class="flex text-yellow-400 text-[14px] gap-2">
+                                <span class="h-4 w-4"><img src="/assets/images/Vector (4).png" alt=""></span> 
+                                <span class="h-4 w-4"><img src="/assets/images/Vector (4).png" alt=""></span> 
+                                <span class="h-4 w-4"><img src="/assets/images/Vector (4).png" alt=""></span> 
+                                <span class="h-4 w-4"><img src="/assets/images/Vector (4).png" alt=""></span> 
+                                <span class="h-4 w-4"><img src="/assets/images/Vector (4).png" alt=""></span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Section 02 of page -->
+    <div class="w-full  md:px-8 py-12">
+
+        <!-- Cards Grid -->
+        <!-- 
+      - 1 column on small screens, 2 columns on md+ 
+      - white background container with responsive padding
+    -->
+        <div class="bg-white py-16  md:px-24 px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Tortor lectus sit rutrum et morbi.
+                        Cras eget suspendisse tincidunt dignissim lectus.
+                        Tellus nunc consectetur nulla nibh malesuada risus tristique.
+                        Sit enim rhoncus vitae vitae elit.
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Carla Stanton</h3>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Eu vulputate fermentum ante lectus.
+                        Sit adipiscing convallis cursus libero sed varius metus sit.
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Leo George</h3>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Massa id ornare convallis eget bibendum amet
+                        sapien purus. Condimentum lacus sed a arcu integer turpis habitasse...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Olivia Gardens</h3>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Turpis sem auctor faucibus eget. In tempor
+                        senectus ultricies egestas ullamcorper...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Ryan Baptista</h3>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Cursus morbi ullamcorper venenatis venenatis sed
+                        bibendum arcu urna consectetur...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Madelyn Geidt</h3>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Vitae ullamcorper varius vitae cras sodales
+                        elementum ultrices lorem...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Ebrason Rosser</h3>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Cursus morbi ullamcorper venenatis venenatis
+                        sed bibendum arcu urna consectetur...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Makenna Rosser</h3>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. A eget nunc at ac turpis. Scelerisque tincidunt
+                        ut eu nec praesent...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Nolia Yvonne</h3>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Massa nisl tortor quis non enim enim quis...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Ahmad Bergson</h3>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="bg-[#f7f7f7] rounded-lg shadow p-6">
+                    <p class="text-gray-700 mb-4 text-center font-degular-var">
+                        Lorem ipsum dolor sit amet consectetur. Consequat malesuada urna interdum diam
+                        consequat eget eu risus aliquam...
+                    </p>
+                    <h3 class="font-semibold text-gray-900 text-center font-Degular">Makena Levin</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="bg-white py-8 md:px-24">
+            <div class="flex items-center justify-center space-x-2 mb-12">
+                <a href="#"
+                    class="flex justify-center items-center py-[12px] px-[16px] bg-[#FFCC32] text-gray-700 rounded   h-[48px] w-[48px] rounded-2xl">1</a>
+                <a href="#"
+                    class="flex justify-center items-center py-[12px] px-[16px]   text-gray-700 rounded   h-[48px] w-[48px] ">2</a>
+                <a href="#"
+                    class="flex justify-center items-center py-[12px] px-[16px]   text-gray-700 rounded   h-[48px] w-[48px]">3</a>
+                <span class="text-gray-500">...</span>
+                <a href="#"
+                    class="flex justify-center items-center py-[12px] px-[16px] text-gray-700 rounded  h-[48px] w-[48px]">16</a>
+                <a href="#"
+                    class="flex justify-center items-center py-[12px] px-[16px] text-gray-700 rounded  h-[48px] w-[100px]">→</a>
+            </div>
+        </div>
+
+        <!-- Bottom CTA Section -->
+        <div class="relative bg-white py-8 md:px-24 px-4">
+
+            <div class="absolute md:right-24 right-0 ">
+                <img src="/assets/images/Vector (2).png" alt="alt">
+            </div>
+            <div class="absolute  bottom-10 right-64  ml-0">
+                <img src="/assets/images/Vector (3).png" alt="alt">
+            </div>
+            <div class="bg-gray-900 text-white rounded-lg p-4 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+                    <!-- Left side: text -->
+                    <div>
+                        <h2 class="text-[18px] md:text-[24px] font-[500] mb-8 font-Erbaum text-[#ffffff]">
+                            Padėkite mums tobulėti – palikite atsiliepimą
+                            apie mūsų produkciją ir paslaugas
+                        </h2>
+                        <p class="text-sm mb-4">
+                            Jūsų grįžtamasis ryšys leidžia mums augti ir gerinti jūsų patirtį.
+                        </p>
+                        <button class="bg-[#FFCC32] text-[#000000] font-[700] text-[18px] px-6 py-3 rounded-xl
+                   hover:bg-yellow-300 transition-colors font-Degular  w-full sm:w-auto">
+                            Palikite atsiliepimą
+                        </button>
+                    </div>
+                    <!-- Right side: decorative element / brand image -->
+                    <div class="">
+                        <div class="flex items-start justify-end">
+                            <!-- Replace with your actual image or graphic -->
+                            <img src="/assets/images/logo.png" alt="CTA Graphic" class="max-w-[200px] h-auto md:block hidden" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
