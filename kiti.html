@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="bg-[#000000]">
+    <div class="relative max-w-[1440px] flex flex-col p-[16px] md:pt-[32px] md:pb-[80px] md:pr-[80px] md:pl-[80px] gap-[56px] mx-auto bg-[#ffffff]">
+      <div class="flex gap-[8px] text-[#000000]">
+        <img class="h-[24px] w-[24px]" src="/assets/icons/ArrowLeft.png" alt="">
+        <p class="text-[16px] font-[700] text-[#000000] font-Degular">Grįžti</p>
+      </div>
+      <!-- Flex container switches from column to row on medium screens -->
+      <div class="flex flex-col md:flex-row gap-[56px]">
+        <!-- Container-1: Textual Content -->
+        <div class="order-2 md:order-1 flex flex-col gap-[32px] md:w-[50%]">
+          <div class="flex flex-col gap-[24px]">
+            <h1 class="font-Erbaum font-[400] text-[40px] leading-[48px] text-[#000000]">Kiti miestai</h1>
+            <div class="flex flex-col gap-[16px]">
+              <div class="flex gap-[16px] items-center">
+                <img class="h-[20px] w-[20px]" src="/assets/icons/Vector (10).png" alt="">
+                <p class="text-[18px] font-[400] leading-[26px] text-[#000000] font-degular-var">+370 613 74 226</p>
+              </div>
+              <div class="flex gap-[16px] items-center">
+                <img class="h-[20px] w-[20px]" src="/assets/icons/Vector(11).png" alt="">
+                <p class="text-[18px] font-[400] leading-[26px] text-[#000000] font-degular-var">projektai@langu-sistemos.lt</p>
+              </div>
+              <div class="flex gap-[16px] items-center">
+                <img class="h-[20px] w-[20px]" src="/assets/icons/Vector (6).png" alt="">
+                <p class="text-[18px] font-[400] leading-[26px] text-[#000000] font-degular-var">
+                  I – V: 08.00 – 17.00 VI-VII: Nedirbame</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[24px]">
+            <p class="text-[18px] font-[400] leading-[26px] text-[#000000] font-degular-var">
+              Norėtumėte pasinaudoti Langų sistemų paslaugomis ir įsirengti kokybiškus bei patvarius langus, tačiau gyvenate ne didžiuosiuose miestuose? Ne bėda! Nuo šiol mūsų mobilusis meistras gali suteikti visas galimas paslaugas ir pasirūpinti jūsų poreikiais <span class="text-[18px] font-[700] font-Degular leading-[26px]">Visagine, Švenčionyse, Švenčionėliuose, Ignalinoje, Zarasuose, Utenoje, Molėtuose</span> ir jų rajonuose – viskas jūsų patogumui! Bet kurių iš šių miestų ar jų rajonų gyventojai gali pasikonsultuoti, išsikviesti matuotoją, gauti pasiūlymą ir langus su montavimo paslauga. Nedvejokite ir rinkitės Langų sistemas jau dabar!
+            </p>
+          </div>
+        </div>
+        <!-- Container-2: Images -->
+        <div class="order-1 md:order-2 flex flex-col gap-[16px] md:w-[50%]">
+          <div>
+            <img class="w-[320px] h-[120px] md:w-[640px] md:h-[240px] rounded-[16px] object-cover" src="/assets/images/photo (2).png" alt="">
+          </div>
+          <div>
+            <img class="w-[320px] h-[120px] md:w-[640px] md:h-[240px] rounded-[16px] object-cover" src="/assets/images/photo (3).png" alt="">
+          </div>
+        </div>
+        <!-- Decorative Absolute Positioned Element -->
+        <div class="absolute right-0 top-[175px] md:top-[225px]">
+          <img class="w-[100px] h-[120px] md:w-full md:h-full" src="/assets/images/Vector (14).png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
