@@ -118,8 +118,9 @@ body {
   font-family: "DegularVariable", serif;
 }
 
-.font-Erbaum{
-  font-family: "Erbaum",serif;
+.font-Erbaum {
+  /* font-family: "Erbaum",serif; */
+  font-family: "ErbaumRegular",serif;
 }
 
 .font-Degular{
