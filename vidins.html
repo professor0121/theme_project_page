@@ -13,8 +13,8 @@
     <!-- Whole container containing all sections -->
     <div class="bg-[#000000]">
         <!-- Container 1 -->
-        <div class="flex flex-col max-w-[1440px] w-full mx-auto bg-[#ffffff] 
-               px-[16px] md:px-[80px] pt-[24px] pb-[80px] gap-[56px]">
+        <div class="flex flex-col max-w-[1440px] w-full mx-auto bg-[#ffffff]
+                px-[16px] md:px-[80px] pt-[16px] pb-[40px] gap-[24px] md:gap-[56px]">
             <!-- Back button -->
             <div class="flex gap-[8px] text-[#000000] items-center">
                 <svg width="18" height="15" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,24 +36,38 @@
                     </svg>
                 </div>
                 <!-- Text content -->
-                <div class="flex flex-col gap-[24px]">
-                    <div class="flex flex-col gap-[24px]">
+                <div class="flex flex-col  gap-[24px]">
+                    <div class="flex flex-col gap-[8px]  md:gap-[24px]">
+                        <!-- heading for mobile -->
+                        <div class="flex md:hidden block gap-[12px] items-center">
+                            <div class="w-[13px] flex-shrink-0">
+                                <svg width="13" height="32" viewBox="0 0 13 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.04132 32L0 29.8461L7.98623 21.4194C9.35905 19.9709 10.1111 18.05 10.1111 15.9969C10.1111 13.9437 9.35308 12.0228 7.98623 10.5806L0 2.15391L2.04132 0L10.0275 8.42669C11.9435 10.4483 13 13.1376 13 15.9969C13 18.8561 11.9435 21.5454 10.0275 23.567L2.04132 31.9937V32Z"
+                                        fill="#FFCC32" />
+                                </svg>
+
+                            </div>
+                            <h1 class="text-[#000000] text-[28px] font-[400] leading-[32px] font-Erbaum">
+                                Mediniai langai
+                            </h1>
+                        </div>
                         <h1 class="hidden md:block text-[#000000] text-[40px] font-[400] leading-[48px] font-Erbaum">
                             Mediniai langai
                         </h1>
-                        <p class="text-[#000000] text-[18px] font-[700] leading-[26px] font-Degular">
+                        <p class="text-[#000000] text-[16px] md:text-[18px] font-[700] leading-[26px] font-Degular">
                             Mediniai langai – jaukumo ir tvarumo simbolis
                         </p>
-                        <p class="text-[#000000] text-[18px] font-[400] leading-[26px] font-degular-var">
+                        <p class="text-[#000000] text-[16px] md:text-[18px] font-[400] leading-[26px] font-degular-var">
                             Mediniai langai – puikus pasirinkimas tiems, kurie siekia tvarumo, natūralumo ir jaukumo
-                            savo
-                            namuose.
+                            savo namuose.
                         </p>
                         <p class="text-[#000000] text-[18px] font-[700] leading-[26px] font-Degular">
                             Rodyti daugiau
                         </p>
                     </div>
-                    <div class="flex flex-col md:flex-row gap-[16px]">
+                    <div class="flex flex-col md:flex-row gap-[8px] md:gap-[16px]">
                         <button
                             class="text-[18px] font-[700] leading-[26px] font-Degular self-start w-full md:w-[260px] h-[58px] p-[16px] rounded-[16px] bg-[#000000] text-[#ffffff]">
                             Kontaktai
@@ -68,10 +82,11 @@
         </div>
 
         <!-- Container-2 -->
-        <div class="flex flex-col max-w-[1440px] w-full mx-auto bg-[#ffffff] 
-       px-[16px] md:px-[80px] pt-[40px] pb-[80px] gap-[32px] border-b-[1px]">
-            <div class="md:flex block gap-[48px]">
-                <div class="w-[470px] h-[480px] rounded-[16px] border-[1px] border-[#EEEEEE]  overflow-hidden">
+        <div class="flex flex-col max-w-[1440px] w-full mx-auto bg-[#ffffff]
+                px-[16px] md:px-[80px] pt-[40px] pb-[56px] gap-[24px] md:gap-[32px] border-b-[1px]">
+            <div class="flex flex-col md:flex-row gap-[48px]">
+                <!-- Product Card -->
+                <div class="w-full md:w-[470px] h-[450px] rounded-[16px] border-[1px] border-[#EEEEEE]">
                     <div
                         class="flex items-center relative top-[16px] left-[16px] w-[178px] h-[34px] rounded-[1000px] px-[12px] py-[8px] gap-[8px] bg-[#027AFF]">
                         <p class="text-[12px] font-[700] leading-[18px] font-Degular">Populiariausia prekė</p>
@@ -81,45 +96,83 @@
                                 fill="white" />
                         </svg>
                     </div>
-                    <img src="/assets/images/Bialy-Sosna1-500x500 1.png" alt="">
+                    <img class="object-contain w-full h-[400px]" src="/assets/images/Bialy-Sosna1-500x500 1.png" alt="">
                 </div>
-                <div class="flex flex-col gap-[24px]">
-                    <h1 class="text-[#000000] text-[32px] font-[400] leading-[40px] font-Erbaum">
+                <!-- Product Details -->
+                <div class="flex flex-col gap-[16px] md:gap-[24px]">
+                    <h1
+                        class="text-[#000000] text-[18px] leading-[24px] md:text-[32px] font-[400] md:leading-[40px] font-Erbaum">
                         Softline mediniai langai
                     </h1>
                     <div class="flex flex-col gap-[8px]">
                         <div class="flex gap-[8px]">
-                            <p class="text-[18px] font-[700] leading-[26px] font-Degular text-[#000000]">Energinio naudingumo klasė:</p>
-                            <p class="text-[18px] font-[400] leading-[26px] font-degular-var text-[#000000]">A</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Energinio naudingumo klasė:
+                            </p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                A</p>
                         </div>
                         <div class="flex gap-[8px]">
-                            <p class="text-[18px] font-[700] leading-[26px] font-Degular text-[#000000]">Profilio plotis (mm):</p>
-                            <p class="text-[18px] font-[400] leading-[26px] font-degular-var text-[#000000]">68/78/88</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Profilio plotis (mm):
+                            </p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                68/78/88
+                            </p>
                         </div>
                         <div class="flex gap-[8px]">
-                            <p class="text-[18px] font-[700] leading-[26px] font-Degular text-[#000000]">Apkaustai:</p>
-                            <p class="text-[18px] font-[400] leading-[26px] font-degular-var text-[#000000]">Maco MultiMatic</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Apkaustai:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                Maco
+                                MultiMatic</p>
                         </div>
                         <div class="flex gap-[8px]">
-                            <p class="text-[18px] font-[700] leading-[26px] font-Degular text-[#000000]">Maksimalus stiklo paketo storis (mm):</p>
-                            <p class="text-[18px] font-[400] leading-[26px] font-degular-var text-[#000000]">32/44/54</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Maksimalus stiklo paketo storis (mm):
+                            </p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                32/44/54
+                            </p>
                         </div>
                         <div class="flex gap-[8px]">
-                            <p class="text-[18px] font-[700] leading-[26px] font-Degular text-[#000000]">Spalva:</p>
-                            <p class="text-[18px] font-[400] leading-[26px] font-degular-var text-[#000000]">Galimos visos spalvyno spalvos</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Spalva:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                Galimos visos spalvyno spalvos
+                            </p>
                         </div>
                         <div class="flex gap-[8px]">
-                            <p class="text-[18px] font-[700] leading-[26px] font-Degular text-[#000000]">Garantija:</p>
-                            <p class="text-[18px] font-[400] leading-[26px] font-degular-var text-[#000000]">5 metai</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Garantija:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                5 metai</p>
                         </div>
                         <div class="flex gap-[8px]">
-                            <p class="text-[18px] font-[700] leading-[26px] font-Degular text-[#000000]">Kaina:</p>
-                            <p class="text-[18px] font-[400] leading-[26px] font-degular-var text-[#000000]">Priklauso nuo išmatavimų, pasirinktų priedų</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Kaina:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                Priklauso nuo išmatavimų, pasirinktų priedų
+                            </p>
                         </div>
                     </div>
                     <div class="flex flex-col md:flex-row gap-[16px]">
                         <button
-                            class="text-[18px] font-[700] leading-[26px] font-Degular self-start w-full md:w-[260px] h-[58px] p-[16px] rounded-[16px] bg-[#ffffff] text-[#000000] border-[1px] border-[#BEBEBE      ]">
+                            class="text-[18px] font-[700] leading-[26px] font-Degular self-start w-full md:w-[260px] h-[58px] p-[16px] rounded-[16px] bg-[#ffffff] text-[#000000] border-[1px] border-[#BEBEBE]">
                             Kontaktai
                         </button>
                         <button
@@ -129,7 +182,237 @@
                     </div>
                 </div>
             </div>
+            <div class="flex flex-col md:flex-row gap-[48px]">
+                <!-- Product Card -->
+                <div class="w-full md:w-[470px] h-[450px] rounded-[16px] border-[1px] border-[#EEEEEE]">
+                    <!-- <div
+                        class="flex items-center relative top-[16px] left-[16px] w-[178px] h-[34px] rounded-[1000px] px-[12px] py-[8px] gap-[8px] bg-[#027AFF]">
+                        <p class="text-[12px] font-[700] leading-[18px] font-Degular">Populiariausia prekė</p>
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.625 4.0075C13.4842 3.84795 13.3111 3.72019 13.1171 3.63269C12.9231 3.54519 12.7128 3.49996 12.5 3.5H9V2.5C9 1.83696 8.73661 1.20107 8.26777 0.732233C7.79893 0.263392 7.16304 1.28189e-07 6.5 1.28189e-07C6.40711 -6.63752e-05 6.31604 0.0257445 6.237 0.0745385C6.15795 0.123333 6.09407 0.19318 6.0525 0.27625L3.69125 5H1C0.734784 5 0.48043 5.10536 0.292893 5.29289C0.105357 5.48043 0 5.73478 0 6V11.5C0 11.7652 0.105357 12.0196 0.292893 12.2071C0.48043 12.3946 0.734784 12.5 1 12.5H11.75C12.1154 12.5001 12.4684 12.3668 12.7425 12.1252C13.0166 11.8835 13.1931 11.5501 13.2388 11.1875L13.9888 5.1875C14.0153 4.97626 13.9966 4.76179 13.9339 4.55833C13.8712 4.35488 13.7659 4.16711 13.625 4.0075ZM1 6H3.5V11.5H1V6ZM12.9963 5.0625L12.2463 11.0625C12.231 11.1834 12.1722 11.2945 12.0808 11.3751C11.9895 11.4556 11.8718 11.5 11.75 11.5H4.5V5.61812L6.79437 1.02875C7.13443 1.09681 7.4404 1.2806 7.66021 1.54884C7.88002 1.81708 8.0001 2.1532 8 2.5V4C8 4.13261 8.05268 4.25979 8.14645 4.35355C8.24021 4.44732 8.36739 4.5 8.5 4.5H12.5C12.571 4.49998 12.6411 4.51505 12.7058 4.54423C12.7704 4.5734 12.8282 4.61601 12.8751 4.66922C12.9221 4.72242 12.9571 4.78501 12.978 4.85282C12.9989 4.92063 13.0051 4.9921 12.9963 5.0625Z"
+                                fill="white" />
+                        </svg>
+                    </div> -->
+                    <img class="object-contain w-full h-[400px]" src="/assets/images/Bialy-Sosna1-500x500 1.png" alt="">
+                </div>
+                <!-- Product Details -->
+                <div class="flex flex-col gap-[16px] md:gap-[24px]">
+                    <h1
+                        class="text-[#000000] text-[18px] leading-[24px] md:text-[32px] font-[400] md:leading-[40px] font-Erbaum">
+                        Softline mediniai langai
+                    </h1>
+                    <div class="flex flex-col gap-[8px]">
+                        <div class="flex gap-[8px]">
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Energinio naudingumo klasė:
+                            </p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                A</p>
+                        </div>
+                        <div class="flex gap-[8px]">
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Profilio plotis (mm):
+                            </p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                68/78/88
+                            </p>
+                        </div>
+                        <div class="flex gap-[8px]">
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Apkaustai:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                Maco
+                                MultiMatic</p>
+                        </div>
+                        <div class="flex gap-[8px]">
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Maksimalus stiklo paketo storis (mm):
+                            </p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                32/44/54
+                            </p>
+                        </div>
+                        <div class="flex gap-[8px]">
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Spalva:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                Galimos visos spalvyno spalvos
+                            </p>
+                        </div>
+                        <div class="flex gap-[8px]">
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Garantija:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                5 metai</p>
+                        </div>
+                        <div class="flex gap-[8px]">
+                            <p
+                                class="md:text-[18px] text-[14px] font-[700] md:leading-[26px] leading-[22px] font-Degular text-[#000000]">
+                                Kaina:</p>
+                            <p
+                                class="md:text-[18px] text-[14px] font-[400] md:leading-[26px] leading-[22px] font-degular-var text-[#000000]">
+                                Priklauso nuo išmatavimų, pasirinktų priedų
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-[16px]">
+                        <button
+                            class="text-[18px] font-[700] leading-[26px] font-Degular self-start w-full md:w-[260px] h-[58px] p-[16px] rounded-[16px] bg-[#ffffff] text-[#000000] border-[1px] border-[#BEBEBE]">
+                            Kontaktai
+                        </button>
+                        <button
+                            class="text-[18px] font-[700] leading-[26px] font-Degular self-start w-full md:w-[260px] h-[58px] p-[16px] rounded-[16px] bg-[#FFCC32] text-[#000000]">
+                            Gauti pasiūlymą
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-[16px] justify-center items-center">
+                <span
+                    class="flex justify-center items-center h-[48px] w-[48px] py-[12px] px-[16px] bg-[#FFCC32] rounded-[16px] text-[16px] font-[700] leading-[24px] font-Degular">1</span>
+                <span
+                    class="flex justify-center items-center h-[48px] w-[48px] py-[12px] px-[16px]   rounded-[16px] text-[16px] font-[700] leading-[24px] font-Degular">2</span>
+                <span
+                    class="flex justify-center items-center h-[48px] w-[48px] py-[12px] px-[16px]   rounded-[16px] text-[16px] font-[700] leading-[24px] font-Degular">3</span>
+                <span
+                    class="flex justify-center items-center h-[48px] w-[48px] py-[12px] px-[16px]   rounded-[16px] text-[16px] font-[700] leading-[24px] font-Degular">...</span>
+                <span
+                    class="flex justify-center items-center h-[48px] w-[48px] py-[12px] px-[16px]   rounded-[16px] text-[16px] font-[700] leading-[24px] font-Degular">16</span>
+                <span><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.7806 8.53104L11.0306 15.281C10.8899 15.4218 10.699 15.5008 10.5 15.5008C10.301 15.5008 10.1101 15.4218 9.96937 15.281C9.82864 15.1403 9.74958 14.9494 9.74958 14.7504C9.74958 14.5514 9.82864 14.3605 9.96937 14.2198L15.4397 8.75042H0.75C0.551088 8.75042 0.360322 8.6714 0.21967 8.53075C0.0790178 8.3901 0 8.19933 0 8.00042C0 7.8015 0.0790178 7.61074 0.21967 7.47009C0.360322 7.32943 0.551088 7.25042 0.75 7.25042H15.4397L9.96937 1.78104C9.82864 1.64031 9.74958 1.44944 9.74958 1.25042C9.74958 1.05139 9.82864 0.860523 9.96937 0.719792C10.1101 0.579062 10.301 0.5 10.5 0.5C10.699 0.5 10.8899 0.579062 11.0306 0.719792L17.7806 7.46979C17.8504 7.53945 17.9057 7.62216 17.9434 7.71321C17.9812 7.80426 18.0006 7.90186 18.0006 8.00042C18.0006 8.09898 17.9812 8.19657 17.9434 8.28762C17.9057 8.37867 17.8504 8.46139 17.7806 8.53104Z"
+                            fill="black" />
+                    </svg>
+                </span>
+            </div>
+        </div>
 
+        <!-- Container-3 -->
+        <div class="flex flex-col max-w-[1440px] w-full mx-auto bg-[#ffffff]
+                px-[16px] md:p-[80px] py-[40px] gap-[56px]">
+            <!-- Information Section -->
+            <div class="flex flex-col md:flex-row gap-[16px] md:gap-[24px] w-full">
+                <!-- Icon column (desktop only) -->
+                <div class="hidden md:block w-[48px] flex-shrink-0">
+                    <svg width="20" height="48" viewBox="0 0 20 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.1405 48L0 44.7691L12.2865 32.1291C14.3985 29.9563 15.5556 27.075 15.5556 23.9953C15.5556 20.9156 14.3893 18.0342 12.2865 15.8709L0 3.23086L3.1405 0L15.427 12.64C18.3747 15.6725 20 19.7064 20 23.9953C20 28.2842 18.3747 32.318 15.427 35.3505L3.1405 47.9906V48Z"
+                            fill="#FFCC32" />
+                    </svg>
+                </div>
+
+                <!-- Text content -->
+                <div class="flex flex-col gap-[24px]">
+
+                    <div class="flex flex-col gap-[16] md:gap-[32px]">
+                        <div class="md:hidden flex items-center  gap-[12px] flex flex-shrink-0">
+                            <div class="w-[13px] h-[32px]">
+
+                                <svg width="13" height="33" viewBox="0 0 13 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.04132 32.1484L0 29.9945L7.98623 21.5678C9.35905 20.1193 10.1111 18.1984 10.1111 16.1453C10.1111 14.0921 9.35308 12.1713 7.98623 10.729L0 2.30234L2.04132 0.148438L10.0275 8.57512C11.9435 10.5968 13 13.286 13 16.1453C13 19.0046 11.9435 21.6938 10.0275 23.7155L2.04132 32.1421V32.1484Z"
+                                        fill="#FFCC32" />
+                                </svg>
+                            </div>
+                            <h1 class="text-[#000000] text-[28px] font-[400] leading-[32px] font-Erbaum">
+                                Medinių langų pasirinkimas
+                            </h1>
+                        </div>
+
+                        <div class="flex flex-col gap-[8px] md:gap-[16px]">
+                            <h1
+                                class="md:block hidden text-[#000000] text-[40px] font-[400] leading-[48px] font-Erbaum">
+                                Medinių langų pasirinkimas
+                            </h1>
+                            <p class="text-[#000000] text-[16px] font-[400] leading-[24px] font-degular-var">
+                                Lorem ipsum dolor sit amet consectetur. Pharetra tellus libero donec luctus imperdiet
+                                id.
+                                Arcu vestibulum gravida feugiat metus amet. Enim dignissim massa in nunc tortor egestas
+                                iaculis.
+                                Arcu vulputate mauris odio eros odio bibendum orci.
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[8px] md:gap-[16px]">
+                            <p class="text-[#000000] text-[24px] font-[400] leading-[32px] font-Erbaum">
+                                Lorem ipsum dolor sit amet
+                            </p>
+                            <p class="text-[#000000] text-[16px] font-[400] leading-[24px] font-degular-var">
+                                Lorem ipsum dolor sit amet consectetur. Pharetra tellus libero donec luctus imperdiet
+                                id.
+                                Arcu vestibulum gravida feugiat metus amet. Enim dignissim massa in nunc tortor egestas
+                                iaculis.
+                                Arcu vulputate mauris odio eros odio bibendum orci.
+                                Sit facilisi pulvinar tempor vestibulum. Cum elit aliquam in morbi. A aliquam convallis
+                                a amet eget
+                                mi sapien egestas eget. Nulla fusce eget habitant morbi ultrices nec molestie aenean
+                                vulputate. Orci
+                                convallis sem nunc semper ultrices lectus sagittis tempor. Leo lacus eu diam massa sed
+                                aliquam lorem.
+                                Lorem dui ultricies urna amet nisl consectetur egestas facilisis a. Sit nisl posuere
+                                adipiscing aliquam
+                                et est enim faucibus morbi. Dui vehicula metus arcu sollicitudin lobortis parturient
+                                neque volutpat
+                                praesent. Scelerisque erat vestibulum massa massa mollis turpis tellus proin volutpat.
+                                Accumsan
+                                praesent tristique diam vel tellus volutpat id porta. Enim tellus purus magna orci
+                                feugiat suscipit
+                                velit habitasse vivamus. Maecenas volutpat integer mauris tristique eleifend massa
+                                dignissim
+                                pellentesque.
+                                Viverra ante est integer bibendum dui nisl sed. Senectus vitae eu integer proin pharetra
+                                mi sed
+                                tincidunt.
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[8px] md:gap-[16px]">
+                            <p class="text-[#000000] text-[24px] font-[400] leading-[32px] font-Erbaum">
+                                Lorem ipsum dolor sit amet
+                            </p>
+                            <p class="text-[#000000] text-[16px] font-[400] leading-[24px] font-degular-var">
+                                Lorem ipsum dolor sit amet consectetur. Pharetra tellus libero donec luctus imperdiet
+                                id.
+                                Arcu vestibulum gravida feugiat metus amet. Enim dignissim massa in nunc tortor egestas
+                                iaculis.
+                                Arcu vulputate mauris odio eros odio bibendum orci.
+                                Sit facilisi pulvinar tempor vestibulum. Cum elit aliquam in morbi. A aliquam convallis
+                                a amet eget
+                                mi sapien egestas eget. Nulla fusce eget habitant morbi ultrices nec molestie aenean
+                                vulputate. Orci
+                                convallis sem nunc semper ultrices lectus sagittis tempor. Leo lacus eu diam massa sed
+                                aliquam lorem.
+                                Lorem dui ultricies urna amet nisl consectetur egestas facilisis a. Sit nisl posuere
+                                adipiscing aliquam
+                                et est enim faucibus morbi. Dui vehicula metus arcu sollicitudin lobortis parturient
+                                neque volutpat
+                                praesent. Scelerisque erat vestibulum massa massa mollis turpis tellus proin volutpat.
+                                Accumsan
+                                praesent tristique diam vel tellus volutpat id porta. Enim tellus purus magna orci
+                                feugiat suscipit
+                                velit habitasse vivamus. Maecenas volutpat integer mauris tristique eleifend massa
+                                dignissim
+                                pellentesque.
+                                Viverra ante est integer bibendum dui nisl sed. Senectus vitae eu integer proin pharetra
+                                mi sed
+                                tincidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
